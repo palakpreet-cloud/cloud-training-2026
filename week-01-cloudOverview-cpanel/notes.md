@@ -54,4 +54,24 @@ In AWS, when you launch an EC2 instance or set up a load balancer, you point you
 - **cPanel** — web-based server management panel used by hosting companies
 - **FTP client** — for uploading files to a web server
 - **DNS lookup tools** — for checking A records and server IPs
+
+---
   
+## Web Hosting Hands-On — cPanel & WordPress
+
+### Subdomain
+A subdomain is a prefix added to your main domain (e.g., `pcloud.server.com`).
+In DNS terms, it's a separate A record pointing to the same or different server IP.
+Naming convention used in training: `[name-initial][project].server.com`
+
+### WordPress via cPanel
+WordPress is a CMS (Content Management System) — SaaS-like experience but
+self-hosted (making it closer to PaaS when deployed on managed hosting).
+
+cPanel's Softaculous installer automates:
+- Database creation (MySQL)
+- WordPress file deployment to document root
+- Admin user setup
+
+**Cloud equivalent:** This is what AWS Elastic Beanstalk or Azure App Service
+does for web apps — abstracts the server setup so you focus on the application.
